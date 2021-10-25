@@ -1,5 +1,5 @@
 :root{
-    --primary-color:#fafafa;
+    --primary-color:#fafaface;
     --secondary-color:#000000;
     --teriary-color:#1c6bb6;
   }
@@ -175,13 +175,46 @@
   }
     /* About Me */
   .right-side {
-    width: 75%;
+    width: 300%;
     font-size: 24px;
-    justify-content:flex-start
+    flex-wrap: wrap;
   }
+
 
   /* My Work */
 
   #run-buddy {
     height:100%;background-image: url("../images/Screen Shot 2021-10-24 at 10.57.13 PM.png");
   }
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero{
+    height: 140px;
+
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+}
+img {
+  width: 100%;
+}
