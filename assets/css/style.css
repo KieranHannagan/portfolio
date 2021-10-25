@@ -177,6 +177,7 @@
   .right-side {
     width: 300%;
     font-size: 24px;
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -184,7 +185,16 @@
   /* My Work */
 
   #run-buddy {
-    height:100%;background-image: url("../images/Screen Shot 2021-10-24 at 10.57.13 PM.png");
+    text-align: center;
+    width:50%; height:100%;background-image: url("../images/Screen Shot 2021-10-24 at 10.57.13 PM.png");
+  }
+  
+  section div a {
+    font-size:40px;
+    text-align: center;
+  }
+  .no-underline {
+    text-decoration: none;
   }
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
