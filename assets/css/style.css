@@ -12,7 +12,10 @@
     padding: 0;
  
   }
-
+.highlight{
+  color: var(--teriary-color);
+  background-color:var(--primary-color);
+}
   body {
     background-color: #d9dcd6;
     color: var(--teriary-color);
@@ -31,17 +34,16 @@
   header a {
     text-decoration: none;
     color: var(--primary-color);
-    
   }
 
   header h1 {
     background-color: var(--teriary-color);
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 42px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     justify-content: center;
+    padding-top: 20px;
   }
   header nav {
     margin: 7px 0;
@@ -79,16 +81,16 @@
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/IMG_0015.jpg");
-    background-size: 100%;
+    background-size: 80%;
     background-position: center;
     display:flex;
     justify-content: flex-end;
   }
-.my-portfolio{
+/** .my-portfolio{ 
   display: flex;
   justify-content: flex-end;
 }
-  
+  **/
 
   /* Footer  */
   footer {
@@ -143,14 +145,13 @@
     text-shadow: none;
   }
 
+  footer div {
+    width: 100%;
+    flex: 1 auto;
+  }
+
+
   /* About Me */
-  .float-right {
-    float: right;
-    padding-left: 100px;
-  }
-  .float-left {
-    float: left;
-  }
 
 
   /* My Work */
