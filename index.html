@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS -->
+    
     <title>My Portfolio</title>
 </head>
 <body>
         <!-- Navigation -->
-        <header>
-            <h1>
-                <a class = "highlight" href="index.html">Kieran Hannagan</a>
-            </h1>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#my-work">My Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="resume.html">Resume</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+            <div class="container-fluid">
+                <div class = "col-7 nav-item">
+                    <a class="navbar-brand" href="./index.html"><h1 class = "title-brand">Kieran's Portfolio</h1></a>
+                </div>
+                <div class = "col-5">
+                    <ul class = " d-flex justify-content-between navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class = "nav-item">
+                            <a  class = " btn btn-lg btn-info nav-link active" href="#about-me">About Me</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = " btn btn-lg btn-info nav-link active" href="#my-work">My Work</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = " btn btn-lg btn-info nav-link active" href="#contact">Contact</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a  class = "btn btn-lg btn-info nav-link active" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<main class = "container">
+    
          <!-- Hero -->
-    <section class = "hero">
+    <section class = "hero row">
         <div class="my-portfolio">
             <h2 class="highlight">
                 Kieran's Portfolio
@@ -42,78 +49,133 @@
     </section>
 
     <!-- Portfolio Content -->
-    <section class = "content-portfolio"> 
+    <div class = "row content-portfolio row"> 
+        <div class="col-4">
+            <div id="about-me">
+                <h1 class="body-border">
+                    About Me
+                </h1>
+            
+                
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="right-side card">
+                <div class="card-body">
+                <p class = "card-text">Hi i'm Kieran. I am a senior at the University of St. Thomas in St. Paul, MN.</p>
+                <br />
+                <p class = "card-text">I am studying finance and persueing a career in web developement on the side. I play soccer, basketball and love to make music. Here are a few projects that I have been working on recenty.</p>
+            </div>
+            </div>
+        </div>
         <!-- About Me -->
-        <div id="about-me">
-            <h1 class="body-border">
-                About 
-            </h1>
-            <br />
-            <h1 class="body-border">Me</h1>
-        </div>
         
-        <div class="right-side">
-            <p >Hi i'm Kieran. I am a senior at the University of St. Thomas in St. Paul, MN.</p>
-            <br />
-            <p>I am studying finance and persueing a career in web developement on the side. I play soccer, basketball and love to make music. Here are a few projects that I have been working on recenty.</p>
-        </div>
+        
+       
 
-    </section>
+    </div>
 
-    <section class="content-portfolio">
-        <!-- My Work -->
+ <!-- My Work -->
+ <div class = "row gutter">
+    <div class = "col-4 my-work" id="my-work">
         
-        <div class = "my-work" id="my-work">
-        
-            <h1 class="body-border">
-               Work
-            </h1>
-        </div>
-        <div class= "right-side" id="run-buddy">
-
-        <a class="no-underline" href="http://kieranhannagan.github.io/run-buddy/">Run Buddy</a>
-        </div>
-        
-        
-    </section>
-   
-</body>
-<footer>
-
-    <!-- Contact Me -->
-    <div id="contact" class="contact-info">
         <h1 class="body-border">
-            Contact Me
+           My Work
         </h1>
     </div>
-    <div>
-        <nav>
+     <div class="col-8">
+            <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active " data-bs-interval="10000">
+                        <img src="assets/images/Screen Shot 2021-12-01 at 1.14.21 PM.png" class=" opacity-item d-block w-100" alt="WeatherRiders">
+                        <div class=" btn btn-info carousel-caption d-none d-md-block">
+                            <h4 class = "carousel-font">WeatherRiders</h4>
+                            <p class = "carousel-font" >Metro Transit made easy</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/Screen Shot 2021-11-30 at 3.33.16 PM.png" class=" opacity-item d-block w-100" alt="Weather-DashBoard">
+                        <div class=" btn btn-info carousel-caption d-none d-md-block">
+                            <h4 class = "carousel-font" >First slide label</h4>
+                            <p class = "carousel-font">An interactive weather dashboard</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/Screen Shot 2021-12-01 at 12.52.53 PM.png" class=" opacity-item d-block w-100" alt="Run-Buddy">
+                        <div class="btn btn-info carousel-caption d-none d-md-block">
+                            <h4 class = "carousel-font" >Run-Buddy</h4>
+                            <p class = "carousel-font" >Everyone's favorite fitness pal</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
-            <ul>
-
-                <div>
-                    <li>
-                        <a href="http://https://voice.google.com/u/0/about">(612) 816-7906</a>
-                    </li>
-                </div>
-                <div>
-                    <li>
-                        <a href="mailto:kieranhan1999@gmail.com">kieranhan1999@gmail.com</a>
-                    </li>
-                </div>
-                <div>
-                    <li>
-                        <a href="http://www.linkedin.com/in/kieran-hannagan-49a68a1b6">LinkedIn</a>
-                    </li>
-                </div>
-                <div>
-                    <li>
-                        <a href="http://https://https://github.com/KieranHannagan?tab=repositories">Github</a>
-                    </li>
-                </div>
-
-            </ul>
-        </nav>
     </div>
-</footer>
+</main>
+
+    <footer>
+
+        <!-- Contact Me -->
+
+        
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                <div id="contact" class=" col-6 nav-item contact-info">
+                    <h1 class="body-border">
+                        Contact Me
+                    </h1>
+                </div>
+
+                <div class="nav-item col-6">
+                    <ul class = " d-flex justify-content-between navbar-nav me-auto mb-2 mb-lg-0">
+        
+                        
+                            <li class = "nav-item">
+                                <a class = " footer-btn btn btn-lg btn-info nav-link active" href="http://https://voice.google.com/u/0/about">(612) 816-7906</a>
+                            </li>
+    
+                        
+                            <li class = "nav-item">
+                                <a class = "footer-btn btn btn-lg btn-info nav-link active" href="mailto:kieranhan1999@gmail.com">kieranhan1999@gmail.com</a>
+                            </li class = "nav-item">
+    
+                        
+                            <li class = "nav-item">
+                                <a class = "footer-btn btn btn-lg btn-info nav-link active" href="http://www.linkedin.com/in/kieran-hannagan-49a68a1b6">LinkedIn</a>
+                            </li>
+    
+                        
+                            <li class = "nav-item">
+                                <a class = "footer-btn btn btn-lg btn-info nav-link active" href="http://https://https://github.com/KieranHannagan?tab=repositories">Github</a>
+                            </li>
+    
+        
+                    </ul>
+                </div>
+                </nav>
+            </div>
+    </footer>
+            <!-- Jquery links -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    </body>
+    
 </html>

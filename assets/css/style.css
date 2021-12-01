@@ -11,77 +11,36 @@
     margin: 0;
     padding: 0;
   }
+  .navbar-brand {
+    color: var(--primary-color) !important;
+    padding-top: 2rem !important;
+  }
+  .btn-info {
+    background-color: var(--primary-color) !important;
+  }
+  .bg-dark {
+    background-color: var(--teriary-color) !important;
+  }
 
   body {
     background-color: var(--primary-color);
     color: var(--teriary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
-    /* HEADER AND NAV BAR */
-  .highlight{
-    color: var(--teriary-color);
-    background-color:var(--primary-color);
-  }
 
-  header {
-    padding: 20px 35px;
-    display: flex;
-    background-color: var(--teriary-color);
-    justify-content: space-between;
-    flex-wrap: wrap;
-    top: 0;
-  }
-  header a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
 
-  header h1 {
-    background-color: var(--teriary-color);
-    font-weight: bold;
-    margin: 0;
-    font-size: 42px;
-    color: var(--primary-color);
-    justify-content: center;
-    padding-top: 20px;
-  }
-  header nav {
-    margin: 7px 0;
-  }
-  header nav ul{
-      display: flex;
-  }
+ 
   
-  header nav ul li{
-    padding: 7px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-bottom: 4px solid var(--primary-color);
-  }
-  header nav ul li a:hover{
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
-    text-shadow: none;
-  }
-  /* END HEADER  */
+
+  
 
   /* Hero */
   .hero {
-    height: 600px;
+    height: 30rem;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 5rem;
     background-image: url("../images/IMG_0015.jpg");
-    background-size: 80%;
+    background-size: 100%;
     background-position: center;
     display:flex;
     position:relative;
@@ -99,14 +58,7 @@
   
 
   /* Footer  */
-  footer {
-    padding: 20px 35px;
-    display: flex;
-    background-color: var(--primary-color);
-    justify-content: space-between;
-    flex-wrap: wrap;
-    top: 0;
-  }
+
   footer a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -115,51 +67,12 @@
 
   footer h1 {
     color: var(--teriary-color);
-    font-weight: bold;
-    margin: 0;
+
+    margin-left: 4rem;
     font-size: 36px
   }
   
-  footer nav {
-    margin: 7px 0;
-  }
-
-  footer nav ul {
-    width: 100%;
-  }
   
-  footer nav ul li{
-    padding: 7px;
-    display: flex;
-    flex-wrap: wrap;
-  
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  footer nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-bottom: 4px solid var(--teriary-color);
-  }
-  footer nav ul li a:hover{
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
-    text-shadow: none;
-  }
-  footer div nav {
-    width: 100%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-    footer div {
-      width: 100%;
-      flex: 1 auto;
-    }
   /* body */
   .content-portfolio {
     height:200px;
@@ -173,13 +86,7 @@
     border-bottom: 15px;
     color: var(--tertiary-color);
   }
-    /* About Me */
-  .right-side {
-    width: 300%;
-    font-size: 24px;
-    display: flex;
-    flex-wrap: wrap;
-  }
+
 
 
   /* My Work */
@@ -197,34 +104,17 @@
     text-decoration: none;
   }
 
-  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-  }
-
-  header h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  }
-  .hero{
-    height: 140px;
-
-  }
+footer {
+  background-color: var(--teriary-color);
 }
-@media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
-  }
+
+#contact{
+  color: var(--primary-color);
 }
-img {
-  width: 100%;
+.opacity-item {
+  opacity: 0.75;
+}
+.carousel-font {
+  font: bold;
+  color:var(--teriary-color)
 }
