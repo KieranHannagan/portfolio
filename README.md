@@ -1,6 +1,6 @@
-Kieran's Portfolio
+# Kieran's Portfolio
 
-Purpose
+1.  Purpose
 
 I made this website to display the work that I have done and to have a place to display my future work. It will include projects and my resume
 
