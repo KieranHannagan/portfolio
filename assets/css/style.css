@@ -23,6 +23,8 @@
   }
 
   body {
+    height: 100%;
+    width: 100%;
     background-color: var(--primary-color);
     color: var(--teriary-color);
     font-family: Helvetica, Arial, sans-serif;
@@ -67,7 +69,6 @@
 
   footer h1 {
     color: var(--teriary-color);
-
     margin-left: 4rem;
     font-size: 36px
   }
@@ -105,7 +106,12 @@
   }
 
 footer {
-  background-color: var(--teriary-color);
+
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+
 }
 
 #contact{
